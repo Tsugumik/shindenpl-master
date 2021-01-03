@@ -94,7 +94,7 @@ print(myAnime.get_players(episode=0)
 ```
 Will give effect
 ```json
-{'0': {'Cda': {'id': '590072', 'max_res': '720p', 'lang_subs': 'pl'}}}
+{"0": {"Cda": {"id": "590072", "max_res": "720p", "lang_subs": "pl"}}}
 ```	    
   
 

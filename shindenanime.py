@@ -1,3 +1,4 @@
+from wsgiref import headers
 import requests
 import json
 from bs4 import BeautifulSoup
@@ -117,12 +118,13 @@ class Anime:
         return players_for_user
 
     def gen_video_link(self, playerid: str) -> str:
+        session1 = requests.Session()
         url1 = 'https://api4.shinden.pl/xhr/{}/player_load?auth={}'.format(playerid, self.__authkey)
         url2 = 'https://api4.shinden.pl/xhr/{}/player_show?auth={}&width=0&height=-1'.format(playerid, self.__authkey)
-        requests.get(url1, headers=self.__headersapi)
+        session1.get(url1, headers=self.__headersapi)
         print('Wait 5 seconds')
         sleep(5)
-        response = requests.get(url2, headers=self.__headersapi)
+        response = session1.get(url2, headers=self.__headersapi)
         soup = BeautifulSoup(response.text, 'html.parser')
         iframe = soup.find('iframe')
         if iframe==None:

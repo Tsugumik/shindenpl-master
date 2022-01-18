@@ -1,4 +1,3 @@
-from wsgiref import headers
 import requests
 import json
 from bs4 import BeautifulSoup

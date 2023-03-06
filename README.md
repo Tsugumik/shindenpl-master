@@ -114,9 +114,6 @@ Will give effect
 
 > //ebd.cda.pl/800x450/35129382c
 
-## **I will make some changes in the future. The current version is pre-release.**
-
-
 ## I wrote this just for fun, so it may contain errors !
 
 ## Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

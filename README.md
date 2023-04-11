@@ -1,3 +1,9 @@
+## Outdated
+**The module has been fully rewritten in JavaScript, and has become an integral part of**
+[shinden-client-electron](https://github.com/Tsugumik/shinden-client-electron/tree/main/src/api). 
+
+**This module can still be used, but there is no guarantee that it will work.**
+
 # shindenpl-master
 A module that allows you to get data about anime from shinden.pl, including generating links to players.
 
